@@ -13,6 +13,10 @@ body {
     font-family: "Open sans";
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --first-main-clr: #19c8fa;
     --second-main-clr: #19c9fa7a;
@@ -67,6 +71,32 @@ body {
     transform: translateX(-50%);
     color: var(--gray-clr);
     line-height: 2;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
 }
 
 /* End Global Components */
