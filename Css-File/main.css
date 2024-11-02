@@ -20,7 +20,7 @@ html {
 :root {
     --first-main-clr: #19c8fa;
     --second-main-clr: #19c9fa7a;
-    --gray-clr: #767474;
+    --gray-clr: #a9a9a9;
     --section-padding: 60px 0;
 }
 
@@ -78,6 +78,10 @@ html {
     margin: 0 auto;
 }
 
+ul {
+    list-style: none;
+}
+
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     .container {
@@ -100,3 +104,38 @@ html {
 }
 
 /* End Global Components */
+
+/* Start Header Stayling */
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 97px;
+    position: relative;
+}
+
+.header .container::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: var(--gray-clr);
+    bottom: 0;
+    width: calc(100% - 30px);
+    left: 15px;
+}
+
+.header .container img {
+    height: 40px;
+}
+
+.header .container .link-container ul li {
+    display: inline-block;
+}
+
+/* End Header Stayling */
