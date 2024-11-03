@@ -118,6 +118,7 @@ ul {
     align-items: center;
     min-height: 97px;
     position: relative;
+    background-color: bisque;
 }
 
 .header .container::after {
@@ -127,7 +128,7 @@ ul {
     background-color: var(--gray-clr);
     bottom: 0;
     width: calc(100% - 30px);
-    left: 15px;
+
 }
 
 .header .container img {
@@ -136,6 +137,15 @@ ul {
 
 .header .container .link-container ul li {
     display: inline-block;
+}
+
+.header .container .link-container ul li a {
+    text-transform: capitalize;
+    text-decoration: none;
+    /* color: #fff; */
+    padding: 40px 10px;
+    font-size: 14px;
+    color: #fff;
 }
 
 /* End Header Stayling */
