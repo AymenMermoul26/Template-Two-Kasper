@@ -118,7 +118,7 @@ ul {
     align-items: center;
     min-height: 97px;
     position: relative;
-    background-color: bisque;
+    background-color: #a9a9a9;
 }
 
 .header .container::after {
@@ -135,17 +135,56 @@ ul {
     height: 40px;
 }
 
-.header .container .link-container ul li {
-    display: inline-block;
+.header .container nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
 }
 
-.header .container .link-container ul li a {
+.header .container nav ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.header .container nav ul li a {
     text-transform: capitalize;
     text-decoration: none;
-    /* color: #fff; */
+    display: block;
     padding: 40px 10px;
     font-size: 14px;
     color: #fff;
+    transition: .4s;
+    position: relative;
+    z-index: 2;
 }
+
+
+.container nav ul li a.active,
+.container nav ul li a:hover {
+    color: var(--first-main-clr);
+    border-bottom: 1px solid var(--first-main-clr);
+}
+
+.container nav .form {
+    margin-left: 30px;
+    height: 30px;
+    width: 40px;
+    position: relative;
+    border-left: 1px solid #fff;
+}
+
+.container nav .form i {
+    position: absolute;
+    font-size: 20px;
+    color: #fff;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+
 
 /* End Header Stayling */
